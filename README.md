@@ -1,47 +1,65 @@
-# shelby-storage-benchmark
-Benchmark and stress testing tools for Shelby decentralized storage using the Shelby CLI.
 # Shelby Storage Benchmark
 
-This repository benchmarks decentralized storage performance using the Shelby CLI.
+Benchmarking and stress testing tools for the Shelby decentralized storage network using the Shelby CLI.
 
-The goal is to evaluate Shelby's capability for high-throughput data workloads such as AI datasets, media streaming, and large blob retrieval.
+## Overview
 
-## Features
+This project provides experimental benchmarking tools designed to evaluate performance characteristics of Shelby storage such as:
 
-* automated file generation
-* CLI upload/download benchmarks
-* stress testing with concurrent uploads
-* performance visualization
-* CI-based reproducible benchmarks
+- upload throughput
+- download latency
+- concurrent read performance
+- storage reliability under stress workloads
 
-## Installation
+The goal is to explore how Shelby performs in real-world data-intensive applications.
 
-Install Shelby CLI
+## Repository Structure
 
-npm install -g @shelby-protocol/cli
+shelby-storage-benchmark
+│
+├── benchmark
+│   ├── benchmark.py
+│   ├── stress_test.py
+│   └── shelby_cli_auto_benchmark.py
+│
+├── dashboard
+│   └── plot_results.py
+│
+├── results
+│
+└── README.md
 
-Clone repo
 
-git clone https://github.com/username/shelby-storage-benchmark
+## Benchmark Features
 
-Generate files
+### Upload Benchmark
 
-python benchmark/file_generator.py
+Measures time required to upload files and calculates throughput.
 
-Run benchmark
+### Download Benchmark
 
-python benchmark/benchmark.py
+Tests retrieval speed and latency from the Shelby storage network.
 
-Run stress test
+### Stress Testing
 
-python benchmark/stress_test.py
+Simulates multiple concurrent operations to test performance under load.
 
-## Output
+### Result Visualization
 
-Results are saved in:
+Benchmark results can be visualized using the dashboard scripts.
 
-results/benchmark_results.csv
+## Example Use Case
 
-## Goal
+Possible workloads tested with this project include:
 
-The goal is to explore the performance characteristics of Shelby decentralized storage and contribute benchmarking tools for the developer ecosystem.
+- AI dataset storage
+- large file distribution
+- media streaming workloads
+- decentralized data hosting
+
+## Running the Benchmark
+
+Run the automated CLI benchmark script:
+
+```bash
+python benchmark/shelby_cli_auto_benchmark.py
