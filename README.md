@@ -30,22 +30,19 @@ shelby-storage-benchmark
 └── README.md
 
 
+#
 ## Benchmark Features
 
 ### Upload Benchmark
-
 Measures time required to upload files and calculates throughput.
 
 ### Download Benchmark
-
 Tests retrieval speed and latency from the Shelby storage network.
 
 ### Stress Testing
-
 Simulates multiple concurrent operations to test performance under load.
 
 ### Result Visualization
-
 Benchmark results can be visualized using the dashboard scripts.
 
 ## Example Use Case
@@ -57,13 +54,15 @@ Possible workloads tested with this project include:
 - media streaming workloads
 - decentralized data hosting
 
-## Running the Benchmark
+## Quick Start
 
-Run the automated CLI benchmark script:
+Follow these steps to quickly run the benchmark.
+
+### 1. Install Shelby CLI
+Make sure the Shelby CLI is installed and configured on your machine.
+
+### 2. Clone this repository
 
 ```bash
-<<<<<<< HEAD
-python benchmark/shelby_cli_auto_benchmark.py
-=======
-python benchmark/shelby_cli_auto_benchmark.py
->>>>>>> b5a7b2064ec903e62a06106c7dbfb794d9f1e0d5
+git clone https://github.com/Binhan01/shelby-storage-benchmark.git
+cd shelby-storage-benchmark
