@@ -62,4 +62,8 @@ Possible workloads tested with this project include:
 Run the automated CLI benchmark script:
 
 ```bash
+<<<<<<< HEAD
 python benchmark/shelby_cli_auto_benchmark.py
+=======
+python benchmark/shelby_cli_auto_benchmark.py
+>>>>>>> b5a7b2064ec903e62a06106c7dbfb794d9f1e0d5
