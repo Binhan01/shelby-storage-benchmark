@@ -1,0 +1,14 @@
+import pandas as pd
+import matplotlib.pyplot as plt
+
+df = pd.read_csv("results/benchmark_results.csv")
+
+plt.bar(df["file"],df["upload_time"])
+
+plt.xticks(rotation=90)
+
+plt.title("Shelby Upload Benchmark")
+
+plt.tight_layout()
+
+plt.show()
